@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "MCP server for QuickBooks Online — manage customers, invoices, payments, vendors, and items from Claude Desktop",
   "type": "module",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bin": {
     "mcp-quickbooks": "./dist/cli.js"
   },
