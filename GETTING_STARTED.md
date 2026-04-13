@@ -6,26 +6,57 @@ until you're ready.
 
 ---
 
-## Part 1: Create your Intuit Developer App (5 min)
+## Part 1: Set up your Intuit Developer Account & Sandbox (10 min)
 
-This is a one-time setup. It's free and uses your existing QBO login.
+This is a one-time setup. It's free and gives you a safe sandbox environment
+with fake data to test everything before touching your real books.
+
+### Step 1: Create a developer account
 
 1. Open **https://developer.intuit.com** in your browser
 2. Click **Sign In** — use the same email and password you use for QuickBooks
-   Online (your regular QBO login)
-3. You'll land on a Dashboard. Click **Create an app**
-4. Select **QuickBooks Online and Payments**
-5. Give it a name — anything works (e.g. "Claude QuickBooks")
-6. Once created, click on your app, then go to **Keys & credentials** in the
+   Online (your regular QBO login works)
+3. If you don't have a QBO account yet, you can sign up for a free Intuit
+   developer account — you don't need a paid QuickBooks subscription to use
+   the sandbox
+
+### Step 2: Get your sandbox company
+
+When you create a developer account, Intuit automatically gives you one
+sandbox company with sample data (customers, invoices, accounts, etc.).
+
+To manage your sandbox companies:
+
+1. From the developer dashboard, go to **API Docs & Tools > Sandbox**
+2. You'll see your sandbox company listed there
+3. To create additional ones, click **+ Add a sandbox company** and pick
+   **QuickBooks Online Plus** or **QuickBooks Online Advanced**
+4. Select your country from the dropdown
+
+**Sandbox details:**
+- You can have up to **10 sandbox companies**
+- Each sandbox is valid for **2 years**
+- Sandboxes come pre-loaded with sample data (customers, vendors, invoices,
+  accounts, items) so you have something to work with right away
+- Development keys **only** work with sandbox companies — they cannot access
+  real QuickBooks data
+- You can delete and recreate sandbox companies anytime from the dashboard
+
+### Step 3: Create your app
+
+1. From the dashboard, click **Create an app**
+2. Select **QuickBooks Online and Payments**
+3. Give it a name — anything works (e.g. "Claude QuickBooks")
+4. Once created, click on your app, then go to **Keys & credentials** in the
    left sidebar
-7. You'll see two tabs at the top: **Development** and **Production**
+5. You'll see two tabs at the top: **Development** and **Production**
    - **Development** = sandbox (fake test data, safe to experiment)
    - **Production** = your real QuickBooks data (use this later)
-8. Stay on the **Development** tab for now
-9. Scroll down to **Redirect URIs** and click **Add URI**
-10. Paste this exactly: `http://localhost:9876/callback` and save
-11. Scroll back up — copy your **Client ID** and **Client Secret** (you'll need
-    these in a moment)
+6. Stay on the **Development** tab for now
+7. Scroll down to **Redirect URIs** and click **Add URI**
+8. Paste this exactly: `http://localhost:9876/callback` and save
+9. Scroll back up — copy your **Client ID** and **Client Secret** (you'll need
+   these in a moment)
 
 That's it for the Intuit side. Keep that browser tab open.
 
