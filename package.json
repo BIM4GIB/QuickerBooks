@@ -1,0 +1,49 @@
+{
+  "name": "mcp-quickbooks",
+  "version": "0.1.0",
+  "description": "MCP server for QuickBooks Online — manage customers, invoices, payments, vendors, and items from Claude Desktop",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "mcp-quickbooks": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "bundle": "node scripts/bundle.mjs",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "setup": "node dist/cli.js setup",
+    "auth": "node dist/cli.js auth",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "mcp",
+    "quickbooks",
+    "quickbooks-online",
+    "claude",
+    "accounting",
+    "model-context-protocol"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "open": "^10.1.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
