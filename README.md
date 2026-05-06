@@ -5,7 +5,7 @@ Connect Claude Desktop to your QuickBooks Online account. Ask Claude to look up 
 ## What You Need
 
 1. **Claude Desktop** - [download here](https://claude.ai/download) if you don't have it
-2. **QuickBooks Online credentials** — your admin will send you a Client ID and Client Secret
+2. **QuickBooks Online credentials** - your admin will send you a Client ID and Client Secret
 
 That's it. The installer handles everything else (including Node.js if you don't have it).
 
@@ -27,7 +27,7 @@ The installer will:
 1. Install Node.js if you don't have it
 2. Download the QuickBooks server
 3. Ask you to paste the Client ID and Client Secret
-4. Open your browser — sign into QuickBooks and click "Connect"
+4. Open your browser - sign into QuickBooks and click "Connect"
 5. Automatically configure Claude Desktop
 
 When it's done, **restart Claude Desktop**.
@@ -64,7 +64,7 @@ Open Claude Desktop and ask things like:
 
 ## Safe sandbox testing
 
-The installer defaults to **sandbox mode** — Intuit's free test environment with fake companies and dummy data. Nothing you do in sandbox touches any real QuickBooks account. Create invoices, delete customers, run reports — it's all disposable.
+The installer defaults to **sandbox mode** - Intuit's free test environment with fake companies and dummy data. Nothing you do in sandbox touches any real QuickBooks account. Create invoices, delete customers, run reports - it's all disposable.
 
 When you're comfortable, run the installer again and pick "Production" to connect to your real books.
 
@@ -78,11 +78,11 @@ node ~/.mcp-quickbooks/cli.mjs auth
 
 ## Troubleshooting
 
-**"No credentials found"** — Run the installer again (the one-liner from above).
+**"No credentials found"** - Run the installer again (the one-liner from above).
 
-**Claude doesn't show QuickBooks tools** — Make sure you restarted Claude Desktop after setup. Check that `claude_desktop_config.json` has a `quickbooks` entry under `mcpServers`.
+**Claude doesn't show QuickBooks tools** - Make sure you restarted Claude Desktop after setup. Check that `claude_desktop_config.json` has a `quickbooks` entry under `mcpServers`.
 
-**Browser didn't open during auth** — Copy the URL printed in the terminal and paste it into your browser manually.
+**Browser didn't open during auth** - Copy the URL printed in the terminal and paste it into your browser manually.
 
 ## For Developers
 
