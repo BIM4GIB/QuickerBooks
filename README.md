@@ -1,6 +1,6 @@
 # QuickerBooks
 
-Connect Claude Desktop to your QuickBooks Online account. Ask Claude to look up customers, create invoices, record payments, and more — all in plain language.
+Connect Claude Desktop to your QuickBooks Online account. Ask Claude to look up customers, create invoices, record payments, and more - all in plain language.
 
 ## What You Need
 
@@ -11,13 +11,13 @@ That's it. The installer handles everything else (including Node.js if you don't
 
 ## Setup (5 minutes)
 
-**Mac / Linux** — open Terminal and paste:
+**Mac / Linux** - open Terminal and paste:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/BIM4GIB/QuickerBooks/main/install.sh | bash
 ```
 
-**Windows** — open PowerShell and paste:
+**Windows** - open PowerShell and paste:
 
 ```powershell
 irm https://raw.githubusercontent.com/BIM4GIB/QuickerBooks/main/install.ps1 | iex
