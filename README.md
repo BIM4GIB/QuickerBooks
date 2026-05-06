@@ -4,7 +4,7 @@ Connect Claude Desktop to your QuickBooks Online account. Ask Claude to look up 
 
 ## What You Need
 
-1. **Claude Desktop** — [download here](https://claude.ai/download) if you don't have it
+1. **Claude Desktop** - [download here](https://claude.ai/download) if you don't have it
 2. **QuickBooks Online credentials** — your admin will send you a Client ID and Client Secret
 
 That's it. The installer handles everything else (including Node.js if you don't have it).
