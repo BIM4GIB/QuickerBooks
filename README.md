@@ -1,6 +1,6 @@
 # QuickerBooks
 
-Connect Claude Desktop to your QuickBooks Online account. Ask Claude to look up customers, create invoices, record payments, and more — all in plain English.
+Connect Claude Desktop to your QuickBooks Online account. Ask Claude to look up customers, create invoices, record payments, and more — all in plain language.
 
 ## What You Need
 
